@@ -15,6 +15,8 @@
 		80C7A5D324FDB6D600563154 /* capitals.json in Resources */ = {isa = PBXBuildFile; fileRef = 80C7A5D224FDB6D600563154 /* capitals.json */; };
 		80C7A5D524FDB6DC00563154 /* SwiftyJSON.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80C7A5D424FDB6DB00563154 /* SwiftyJSON.swift */; };
 		80C7A5D824FDB7A400563154 /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 80C7A5D724FDB7A400563154 /* MapKit.framework */; };
+		80C7A5DA24FDB9E500563154 /* City.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80C7A5D924FDB9E500563154 /* City.swift */; };
+		80C7A5DC24FDBAB600563154 /* SearchViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80C7A5DB24FDBAB600563154 /* SearchViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -28,6 +30,8 @@
 		80C7A5D224FDB6D600563154 /* capitals.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = capitals.json; sourceTree = "<group>"; };
 		80C7A5D424FDB6DB00563154 /* SwiftyJSON.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SwiftyJSON.swift; sourceTree = "<group>"; };
 		80C7A5D724FDB7A400563154 /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
+		80C7A5D924FDB9E500563154 /* City.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = City.swift; sourceTree = "<group>"; };
+		80C7A5DB24FDBAB600563154 /* SearchViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -70,6 +74,8 @@
 				80C7A5CC24FDB69700563154 /* Info.plist */,
 				80C7A5D224FDB6D600563154 /* capitals.json */,
 				80C7A5D424FDB6DB00563154 /* SwiftyJSON.swift */,
+				80C7A5D924FDB9E500563154 /* City.swift */,
+				80C7A5DB24FDBAB600563154 /* SearchViewController.swift */,
 			);
 			path = Placs;
 			sourceTree = "<group>";
@@ -154,8 +160,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				80C7A5DC24FDBAB600563154 /* SearchViewController.swift in Sources */,
 				80C7A5D524FDB6DC00563154 /* SwiftyJSON.swift in Sources */,
 				80C7A5C324FDB69300563154 /* ViewController.swift in Sources */,
+				80C7A5DA24FDB9E500563154 /* City.swift in Sources */,
 				80C7A5C124FDB69300563154 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

@@ -35,5 +35,55 @@
             </objects>
             <point key="canvasLocation" x="70" y="68"/>
         </scene>
+        <!--Search View Controller-->
+        <scene sceneID="Fvy-FH-x2f">
+            <objects>
+                <viewController storyboardIdentifier="Search" id="NwD-sV-WJs" customClass="SearchViewController" customModule="Placs" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="gac-NL-kDo"/>
+                        <viewControllerLayoutGuide type="bottom" id="Web-oh-uMz"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="MHi-Wk-qNu">
+                        <rect key="frame" x="0.0" y="0.0" width="1920" height="1080"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" sectionHeaderHeight="66" sectionFooterHeight="66" translatesAutoresizingMaskIntoConstraints="NO" id="cjt-M4-9HZ">
+                                <rect key="frame" x="460" y="0.0" width="1000" height="1080"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <prototypes>
+                                    <tableViewCell contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="Cell" textLabel="kEI-0a-xTk" style="IBUITableViewCellStyleDefault" id="ob4-OV-j64">
+                                        <rect key="frame" x="0.0" y="66" width="1000" height="66"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="ob4-OV-j64" id="ybz-Mi-rYf">
+                                            <rect key="frame" x="0.0" y="0.0" width="1000" height="66"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" insetsLayoutMarginsFromSafeArea="NO" text="Title" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="kEI-0a-xTk">
+                                                    <rect key="frame" x="20" y="0.0" width="960" height="66"/>
+                                                    <autoresizingMask key="autoresizingMask"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="38"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                        </tableViewCellContentView>
+                                    </tableViewCell>
+                                </prototypes>
+                                <connections>
+                                    <outlet property="dataSource" destination="NwD-sV-WJs" id="Vp0-oW-Mri"/>
+                                    <outlet property="delegate" destination="NwD-sV-WJs" id="aUu-nn-Kmo"/>
+                                </connections>
+                            </tableView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="lCd-it-1tX"/>
+                    </view>
+                    <connections>
+                        <outlet property="tableView" destination="cjt-M4-9HZ" id="hGg-FH-kYf"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="K34-aG-x6x" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2827" y="68"/>
+        </scene>
     </scenes>
 </document>
