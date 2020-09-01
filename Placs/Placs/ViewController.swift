@@ -21,7 +21,9 @@ class ViewController: UIViewController {
     // MARK: - Lifecycle
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view.
+        
+        mapView.centerCoordinate = CLLocationCoordinate2D(latitude: 51.38, longitude: -2.36)
+        updateMap()
     }
 
     // MARK: - Methods
@@ -85,3 +87,8 @@ class ViewController: UIViewController {
     }
 }
 
+extension ViewController: MKMapViewDelegate {
+    func mapView(_ mapView: MKMapView, regionDidChangeAnimated animated: Bool) {
+        updateMap()
+    }
+}
