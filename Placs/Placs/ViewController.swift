@@ -14,12 +14,15 @@ class ViewController: UIViewController {
     // MARK: - Outlets
     @IBOutlet var mapView: MKMapView!
     
-
+    // MARK: - Lifecycle
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
     }
 
-
+    // MARK: - Methods
+    func focus(on city: City) {
+        mapView.centerCoordinate = city.coordinates
+    }
 }
 
