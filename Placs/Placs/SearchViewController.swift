@@ -13,11 +13,16 @@ class SearchViewController: UIViewController {
     // MARK: - Outlets
     @IBOutlet var tableView: UITableView!
     
+    // MARK: - Properties
+    weak var mainTabBarController: UITabBarController!
+    
+    var allCities = [City]()
+    var matchingCities = [City]()
+    
 
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        // Do any additional setup after loading the view.
     }
 
 
@@ -31,4 +36,24 @@ class SearchViewController: UIViewController {
     }
     */
 
+}
+
+extension SearchViewController: UITableViewDelegate, UITableViewDataSource {
+    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+        return 50
+    }
+    
+    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+        let cell = tableView.dequeueReusableCell(withIdentifier: "Cell", for: indexPath)
+        
+        cell.textLabel?.text = "Hello, World"
+        
+        return cell
+    }
+}
+
+extension SearchViewController: UISearchResultsUpdating {
+    func updateSearchResults(for searchController: UISearchController) {
+        
+    }
 }
