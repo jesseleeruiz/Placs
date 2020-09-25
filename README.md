@@ -2,10 +2,10 @@
 
 ![Placs Image](https://github.com/jesseleeruiz/Placs/blob/master/PlacsLogo.png)
 
-A news reader for Apple TV
+A tvOS app giving you the ability to look up interesting places to visit.
 
 ## Tech Stack 🤓
-UIKit | tvOS | MapKit | REST API |
+UIKit | tvOS | MapKit | Core Location | REST API |
 
 ___
 ## Background 😃
