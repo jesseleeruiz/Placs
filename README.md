@@ -1,6 +1,6 @@
 # Welcome to Placs
 
-![NEWSC Image]()
+![Placs Image](https://github.com/jesseleeruiz/Placs/blob/master/PlacsLogo.png)
 
 A news reader for Apple TV
 
